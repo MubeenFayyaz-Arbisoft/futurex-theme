@@ -209,7 +209,7 @@ MFE_CONFIG['INDIGO_ENABLE_DARK_TOGGLE'] = {{ INDIGO_ENABLE_DARK_TOGGLE }}
 @MFE_APPS.add()
 def _add_my_mfe(mfes):
     mfes["authn"] = {
-        "repository": "https://github.com/edly-io/frontend-app-authn",
+        "repository": "https://github.com/edly-io/frontend-app-authn.git",
         "port": 1999,
         "version": "test-progress-branch", # optional, will default to the Open edX current tag.
     }
