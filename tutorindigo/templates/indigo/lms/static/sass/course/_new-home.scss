@@ -72,7 +72,9 @@ $black: #000;
 .homeStaticPage {
   margin-top: 69px;
   width: 100%;
-  max-width: 1170px;
+  max-width: 1170px;    
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 section.home{
   padding: 0 !important;
@@ -80,7 +82,7 @@ section.home{
 .mainBanner {
   background: url("#{$static-path}/images/main-banner.jpg") no-repeat;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 20px;
   font-family: "Poppins", serif;
   height: 600px;
   display: flex;
@@ -645,6 +647,8 @@ section.home{
 @media only screen and (max-width: 992px) {
   .homeStaticPage {
     margin-top: 20px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
   .mainBanner {
     height: 300px;
