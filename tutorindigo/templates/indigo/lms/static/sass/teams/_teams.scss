@@ -1,3 +1,14 @@
+body.indigo-dark-theme {
+  .teamMainWrapper {
+    .page-header {
+      .page-header-main {
+        .page-title {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
 .teamMainWrapper {
   .page-header {
     padding: 37px 20px 16px 20px;
@@ -27,11 +38,13 @@
 
       &.is-active {
         border-bottom: 4px solid $primary !important;
-        color: $dark !important;
+        background-color: $primary;
+        color: #fff !important;
       }
       &:hover {
-        color: $dark !important;
         border-bottom: 4px solid $primary !important;
+        background-color: $primary;
+        color: #fff !important;
       }
     }
   }

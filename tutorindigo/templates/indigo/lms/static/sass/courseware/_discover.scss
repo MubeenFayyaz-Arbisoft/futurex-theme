@@ -592,3 +592,18 @@ body.indigo-dark-theme {
     }
   }
 }
+body.indigo-dark-theme {
+  .courses-container
+    .courses
+    .courses-listing
+    li
+    .course
+    .course-info
+    .learn-more {
+    background-color: #aec7f6 !important;
+    color: #111827 !important;
+  }
+  .saerch-bar-discover .filter-block > a span {
+    color: #111827 !important;
+  }
+}

@@ -181,3 +181,20 @@ body.indigo-dark-theme {
     }
   }
 }
+
+body.indigo-dark-theme {
+  .footerWrap {
+    &__content {
+      background-color: $dark-bg-card-color;
+      color: $text-color-primary;
+    }
+    &__links {
+      a {
+        color: $text-color-primary;
+        &:hover {
+          color: $primary-d !important;
+        }
+      }
+    }
+  }
+}

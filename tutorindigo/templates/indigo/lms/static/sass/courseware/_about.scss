@@ -150,8 +150,9 @@
       .register {
         color: $dark;
         margin: 0 !important;
+        background-color: #f3f3f3;
         &:hover {
-          background-color: #f3f3f3;
+          background-color: #fff;
         }
       }
       &__viewcourse {
@@ -446,7 +447,7 @@
   }
   .sharing-message {
     box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1) !important;
-    border-top: 4px solid  $primary !important;
+    border-top: 4px solid $primary !important;
   }
 }
 body.indigo-dark-theme {
@@ -493,14 +494,14 @@ body.indigo-dark-theme {
         .prerequisites,
         .course-staff,
         .faq {
-          color: $text-color-d;
+          color: $text-color-d !important;
           border: 1px solid $primary-light-d;
           border-left: 14px solid $primary-light-d;
           h2 {
-            color: $text-color-d;
+            color: $text-color-d !important;
           }
           h3 {
-            color: $text-color-d;
+            color: $text-color-d !important;
           }
           .teacher {
             &.update {
@@ -513,11 +514,21 @@ body.indigo-dark-theme {
           }
         }
       }
+      .inner-wrapper.courseInnerWrapper {
+        .about:nth-child(1) {
+          border: 1px solid transparent;
+          border-left: 14px solid transparent;
+        }
+        .faq .responses a {
+          color: $text-color-d !important;
+        }
+      }
     }
+
     .course-sidebar {
-      background: $primary-light-d;
+      background: $primary-light-d !important;
       h2 {
-        color: $text-color-d;
+        color: $text-color-d !important;
       }
       header {
         .social-sharing {
@@ -538,7 +549,7 @@ body.indigo-dark-theme {
             }
           }
           p {
-            color: $text-color-primary;
+            color: $text-color-primary !important;
           }
           .important-dates-item-text {
             color: $text-color-primary;

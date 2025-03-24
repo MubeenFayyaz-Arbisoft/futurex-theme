@@ -303,6 +303,113 @@
       display: block;
       input {
         margin: 10px 0 !important;
+
+        &:hover {
+          background-color: #a7b6d2;
+        }
+      }
+    }
+  }
+}
+
+body.indigo-dark-theme {
+  .instructorWrapper {
+    .cohort-management-settings {
+      .form-submit {
+        background-color: #aec7f6 !important;
+        color: #111827 !important;
+        border-color: #aec7f6 !important;
+        background-image: linear-gradient(#aec7f6, #aec7f6) !important;
+
+        &:hover,
+        &:focus {
+          background-color: #a7b6d2 !important;
+          border-color: #a7b6d2 !important;
+          background-image: linear-gradient(#a7b6d2, #a7b6d2) !important;
+        }
+      }
+      .form-cancel {
+        color: #006daa !important;
+        &:hover {
+          color: #fff !important;
+        }
+      }
+    }
+    #add-allowance {
+      background-color: #aec7f6 !important;
+      color: #111827 !important;
+      border-color: #aec7f6 !important;
+      background-image: linear-gradient(#aec7f6, #aec7f6) !important;
+
+      &:hover,
+      &:focus {
+        background-color: #a7b6d2 !important;
+        border-color: #a7b6d2 !important;
+        background-image: linear-gradient(#a7b6d2, #a7b6d2) !important;
+      }
+    }
+
+    .idash-section#membership {
+      .member-lists-management {
+        .wrapper-member-select {
+          background: transparent !important;
+        }
+        .auth-list-container {
+          .member-list-widget {
+            input[type="button"].add {
+              background-color: #aec7f6 !important;
+              color: #111827 !important;
+              border-color: #aec7f6 !important;
+              background-image: linear-gradient(#aec7f6, #aec7f6) !important;
+
+              &:hover,
+              &:focus {
+                background-color: #a7b6d2 !important;
+                border-color: #a7b6d2 !important;
+                background-image: linear-gradient(#a7b6d2, #a7b6d2) !important;
+              }
+            }
+            .bottom-bar {
+              box-shadow: unset !important;
+              background-color: #f3f3f3 !important;
+            }
+          }
+        }
+      }
+    }
+    .idash-section#cohort_management {
+      .cohort-management {
+        .message {
+          .action-create {
+            background-color: #aec7f6 !important;
+            color: #111827 !important;
+            border-color: #aec7f6 !important;
+            background-image: linear-gradient(#aec7f6, #aec7f6) !important;
+
+            &:hover,
+            &:focus {
+              background-color: #a7b6d2 !important;
+              border-color: #a7b6d2 !important;
+              background-image: linear-gradient(#a7b6d2, #a7b6d2) !important;
+            }
+          }
+        }
+      }
+    }
+
+    .enrollment-button,
+    input[type="button"],
+    button.btn {
+      background-color: #aec7f6 !important;
+      color: #111827 !important;
+      border-color: #aec7f6 !important;
+      background-image: linear-gradient(#aec7f6, #aec7f6) !important;
+
+      &:hover,
+      &:focus {
+        background-color: #a7b6d2 !important;
+        border-color: #a7b6d2 !important;
+        background-image: linear-gradient(#a7b6d2, #a7b6d2) !important;
       }
     }
   }

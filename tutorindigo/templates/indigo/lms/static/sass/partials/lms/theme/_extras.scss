@@ -32,7 +32,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-background-clip: text;
-  -webkit-text-fill-color:  #111827;
+  -webkit-text-fill-color: $dark;
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: none;
 }
@@ -301,7 +301,7 @@ nav.wrapper-preview-menu {
       line-height: 34px;
       margin: 0 0 12px;
       text-align: left;
-      color:  #111827;
+      color: $dark;
     }
     p {
       margin: 0 0 20px;
@@ -345,11 +345,11 @@ body.view-wiki {
           color: $light-dark;
           &:hover,
           &:visited {
-            color:  #111827;
+            color: $dark;
             border-color: transparent;
           }
           &.active {
-            color:  #111827;
+            color: $dark;
             border-color: $primary;
           }
         }
@@ -481,7 +481,7 @@ body.view-instructordash {
             color: white !important;
           }
           &:hover {
-            color:  #111827;
+            color: $dark;
           }
         }
       }
@@ -497,7 +497,7 @@ body.view-instructordash {
           font-size: 16px;
           line-height: 28px;
           font-weight: 400;
-          color:  #111827;
+          color: $dark;
         }
         .total {
           border-top: 1px solid $border-color;
@@ -513,7 +513,7 @@ body.view-instructordash {
       background: $primary-light;
       padding: 15px 0 0 15px;
       font-size: 18px;
-      color:  #111827;
+      color: $dark;
       font-weight: 600;
       margin-bottom: 0;
     }
@@ -536,7 +536,7 @@ body.view-instructordash {
       margin: 0 0 30px;
       h4 {
         font-size: 18px;
-        color:  #111827;
+        color: $dark;
         font-weight: 600;
         span {
           font-size: 14px;
@@ -561,7 +561,7 @@ body.view-instructordash {
           line-height: 28px;
           margin: 0;
           width: 50%;
-          color:  #111827;;
+          color: $dark;
         }
       }
     }
@@ -599,13 +599,13 @@ body.view-wiki {
     }
     #alert_stat_bar {
       .paragon__alert-warning {
-        color:  #111827;
+        color: $dark;
         background: $primary-light;
         border: none;
         button.paragon__close {
           background: none !important;
           box-shadow: none !important;
-          color:  #111827 !important;
+          color: $dark !important;
           opacity: 1 !important;
           font-size: 1.2rem;
           border: none !important;
@@ -647,14 +647,14 @@ body.view-wiki {
     .wiki-wrapper section.wiki .btn.btn-large,
     .wiki-wrapper section.wiki .btn.btn-danger {
       background: none;
-      color:  #111827 !important;
-      border-color:  #111827 !important;
+      color: $dark !important;
+      border-color: $dark !important;
       text-shadow: none !important;
       box-shadow: none !important;
       &:hover {
         background: none !important;
-        color:  #111827 !important;
-        border-color:  #111827 !important;
+        color: $dark !important;
+        border-color: $dark !important;
       }
     }
     .wiki-wrapper section.wiki .btn.btn-primary,
@@ -830,6 +830,17 @@ body.indigo-dark-theme {
   input:-webkit-autofill:active {
     -webkit-text-fill-color: $text-color-d;
   }
+  .teamMainWrapper .page-header .page-description {
+    color: #fff !important;
+  }
+
+  .view-teams .page-content-nav .nav-item {
+    text-shadow: none;
+    color: #fff !important;
+  }
+  .search-count.listing-count {
+    color: #fff !important;
+  }
   input::placeholder {
     opacity: 0.9;
     color: $text-color-d;
@@ -867,22 +878,24 @@ body.indigo-dark-theme {
       background: none;
     }
     #email-students-beta-tip {
-      color:  #111827;
+      color: $dark;
     }
     .wrapper-course-material {
       .tabs.course-tabs {
         border-bottom: 1px solid $primary-light-d;
         li {
           a {
-            color: $text-color-d;
+            color: #fff !important;
             &:hover,
             &:visited {
-              color: $text-color-primary;
-              border-color: transparent;
+              border-bottom: 2px solid $primary-purple !important;
+              background-color: $primary-purple !important;
+              color: #fff !important;
             }
             &.active {
-              color: $text-color-d;
-              border-color: $text-color-d;
+              border-bottom: 2px solid $primary-purple !important;
+              background-color: $primary-purple !important;
+              color: #fff !important;
             }
           }
         }
@@ -1429,6 +1442,71 @@ body.indigo-dark-theme {
       font-weight: 500;
     }
   }
+  .wikiMainWrapper {
+    .breadcrumbs-header {
+      .breadcrumb {
+        li {
+          a {
+            color: $dark !important;
+          }
+          &:after {
+            color: $dark !important;
+          }
+        }
+      }
+    }
+    .article-functions {
+      .nav-tabs {
+        li {
+          a {
+            color: #fff !important;
+            svg {
+              path {
+                stroke: #fff !important;
+              }
+            }
+            &:hover {
+              color: $dark !important;
+              svg {
+                path {
+                  stroke: $primary-purple !important;
+                }
+              }
+            }
+          }
+          &.active {
+            a {
+              color: $dark !important;
+              svg {
+                path {
+                  stroke: $primary-purple !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      .see-children {
+        a {
+          background-color: $primary-d !important;
+          &:hover {
+            background-color: $primary-d !important;
+          }
+        }
+      }
+    }
+  }
+  .wikiMainWrapper.wiki-wrapper
+    .wiki
+    .main-article.new-article
+    .form-horizontal
+    .form-actions
+    button.btn.btn-primary.btn-large {
+    background-color: hsl(219, 80%, 82%) !important;
+    &:hover {
+      background-color: #a7b6d2;
+    }
+  }
 }
 
 .courseWrapper {
@@ -1439,7 +1517,7 @@ body.indigo-dark-theme {
       }
       .course-date {
         .localized_datetime {
-          color:  $dark !important;
+          color: $dark !important;
         }
       }
     }

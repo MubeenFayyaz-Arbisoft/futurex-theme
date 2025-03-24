@@ -784,6 +784,17 @@ html {
   --footer-icon-color: #{$white-color};
   --hover-button-bg: #{$green-color};
   &:dir(rtl) {
+    .newCard {
+      font-family: $ibm-plex-font-family !important;
+      &__actionBtn {
+        a {
+          font-family: $ibm-plex-font-family !important;
+          i {
+            transform: scale(-1);
+          }
+        }
+      }
+    }
     a,
     .whyUsWrapper {
       font-family: $ibm-plex-font-family !important;
@@ -798,43 +809,35 @@ html {
       &__heading,
       &__subTitle {
         font-family: $ibm-plex-font-family !important;
-        text-align: right !important;
+        text-align: center !important;
       }
     }
     .sectionWrapper {
       &__sectionHeading,
       &__description {
         font-family: $ibm-plex-font-family !important;
-        text-align: right !important;
+        text-align: center !important;
       }
     }
-    h2.sectionWrapper__sectionHeading.text-center, p.sectionWrapper__description {
+
+    h2.sectionWrapper__sectionHeading.text-center,
+    .sectionWrapper__description {
       text-align: center !important;
     }
+    h2.sectionWrapper__sectionHeading.text-start {
+      text-align: right !important;
+    }
     .platformProfile {
+      img {
+        margin-bottom: 10px;
+      }
       &__heading,
       &__desc {
         font-family: $ibm-plex-font-family !important;
         text-align: right !important;
       }
     }
-    .sectionWrapper {
-      &__sectionHeading {
-        font-family: $ibm-plex-font-family !important;
-        text-align: right !important;
-      }
-    }
-    .newCard {
-      font-family: $ibm-plex-font-family !important;
-      &__actionBtn {
-        a {
-          font-family: $ibm-plex-font-family !important;
-          i {
-            transform: scale(-1);
-          }
-        }
-      }
-    }
+
     .faqWrapper {
       .accordion-button {
         font-family: $ibm-plex-font-family !important;
@@ -843,6 +846,91 @@ html {
           margin-right: auto !important;
         }
       }
+    }
+  }
+}
+
+body.indigo-dark-theme p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+label {
+  color: $text-color-d;
+}
+body.indigo-dark-theme {
+  .testimonialWrapper__card,
+  .courseMainWrapper,
+  .platformProfile {
+    background-color: $dark-bg-card-color !important;
+  }
+  .newCard {
+    border: 1px solid $border-color-d;
+    background-color: transparent !important;
+    &__actionBtn {
+      a {
+        color: #aec7f6 !important;
+        &:hover {
+          color: $text-color-primary !important;
+        }
+      }
+    }
+  }
+  .partnerWrapper {
+    &__imgWrap {
+      background-color: $dark-bg-card-color !important;
+
+      img {
+        filter: brightness(233);
+      }
+    }
+  }
+
+  .faqWrapper {
+    .accordion {
+      --bs-accordion-bg: transparent;
+    }
+    .accordion-button {
+      color: #aec7f6 !important;
+    }
+    .accordion-body {
+      color: $text-color-primary !important;
+    }
+  }
+  .contactFormWrapper {
+    .form-group label {
+      color: $text-color-primary !important;
+      .validation-error {
+        color: $danger-d !important;
+      }
+    }
+    .form-control {
+      background-color: $dark-bg-card-color !important;
+    }
+    .form-check-label {
+      color: $text-color-primary !important;
+    }
+  }
+  .newsletterInputWrapper {
+    &__input {
+      background-color: $dark-bg-card-color !important;
+    }
+    &__para {
+      a {
+        color: $primary-d !important;
+      }
+    }
+  }
+
+  .testimonialWrapper {
+    &__authorName {
+      color: $primary-d !important;
+    }
+    &__authoPost {
+      color: $text-color-primary !important;
     }
   }
 }
