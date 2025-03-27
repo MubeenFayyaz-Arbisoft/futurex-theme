@@ -35,6 +35,7 @@ body.indigo-dark-theme {
     .nav-item {
       border-bottom: 4px solid transparent !important;
       color: $dark !important;
+      text-shadow: none !important;
 
       &.is-active {
         border-bottom: 4px solid $primary !important;
@@ -139,6 +140,11 @@ body.indigo-dark-theme {
           background-color: $primary !important;
           color: #fff !important;
         }
+        &:focus{
+          border: 1px solid $primary !important;
+          background-color: $primary !important;
+          color: #fff !important;
+        }
       }
     }
     &.team-card {
@@ -212,5 +218,11 @@ body.indigo-dark-theme {
       margin: 0 !important;
       margin-bottom: 20px !important;
     }
+  }
+}
+
+body.indigo-dark-theme{
+  .teamMainWrapper .page-content-nav .nav-item{
+    color: #ffffff !important;
   }
 }

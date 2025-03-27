@@ -933,4 +933,15 @@ body.indigo-dark-theme {
       color: $text-color-primary !important;
     }
   }
+  .footerWrap {
+    &__links {
+      a {
+        color: #fff !important;
+      }
+    }
+    &__social-icon {
+      fill: #ffffff;
+    }
+  }
 }
+

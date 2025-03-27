@@ -432,3 +432,33 @@ body.indigo-dark-theme {
     }
 }
 
+
+  
+  [dir="rtl"] {
+    header.global-header {
+        .main-header {
+            display: flex !important;
+
+            .header-logo{
+                a{
+                    margin: 0 !important;
+                }
+            }
+            .nav-links{
+                display: flex;
+                .main{
+                    margin-left: unset !important;
+                    margin: 0 38px 0 0 !important;
+                }
+                .secondary{
+                    margin-right: auto;
+                    .theme-toggle-button{
+                        margin-right: unset !important;
+                        margin-left: 1.5rem !important;
+                    }
+                }
+            }
+        }
+      }
+  }
+  
